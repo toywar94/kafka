@@ -28,6 +28,19 @@ dependencies {
     // kafka
     implementation("org.springframework.kafka:spring-kafka")
 
+    //webclient
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
+
+    //lombok
+    implementation("org.projectlombok:lombok:1.18.22")
+    annotationProcessor("org.projectlombok:lombok:1.18.22")
+    compileOnly("org.projectlombok:lombok:1.18.22")
+
+    // coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }

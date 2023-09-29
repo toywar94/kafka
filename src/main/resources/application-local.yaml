@@ -1,1 +1,20 @@
+server:
+  port: 8000
 
+spring:
+  config:
+    import: application.yaml
+    activate:
+      on-profile: local
+  jpa:
+    properties:
+      hibernate:
+  #        show_sql: true
+  #        format_sql: true
+  #        use_sql_comments: true
+
+#  datasource:
+#    url:
+#    username:
+#    password:
+#    driver-class-name: 
