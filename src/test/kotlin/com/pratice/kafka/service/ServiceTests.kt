@@ -43,4 +43,20 @@ class ServiceTests {
         coroutineService.cancelling()
     }
 
+    @Test
+    fun test_async_Concurrent(){
+        coroutineService.asyncConcurrent()
+    }
+
+    @Test
+    fun test_simple(){
+        coroutineService.simpleTest()
+    }
+
+    @Test
+    fun test_simple2(){
+        coroutineService.simpleTest2()
+    }
+
+
 }
